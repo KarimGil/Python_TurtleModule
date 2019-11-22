@@ -41,13 +41,16 @@ for colours in color:
     turtle.left(90)
 turtle.penup()
 
-#Filled color stroke
+#Filled color
 turtle.penup()
 turtle.goto(175,100)
 turtle.pendown()
-for colours in color:
+turtle.color("blue","cyan")
+turtle.begin_fill()
+for j in range(4):
     turtle.forward(150)
     turtle.left(90)
+turtle.end_fill()
 
 
 turtle.done()
